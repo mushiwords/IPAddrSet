@@ -1,0 +1,257 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IPAddrSet.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\IPAddrSet.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 IPAddrSet"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,13,21,21
+    LTEXT           "IPAddrSet 1.1 版",IDC_STATIC,105,7,84,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,49,21,119,8
+    DEFPUSHBUTTON   "确定",IDOK,185,7,50,14,WS_GROUP
+    LTEXT           "作者：yaung",IDC_STATIC,16,49,115,11
+    LTEXT           "单位：西安建筑科技大学",IDC_STATIC,16,70,115,11
+    LTEXT           "email：gaoyang615@163.com",IDC_STATIC,17,91,115,11
+END
+
+IDD_IPADDRSET_DIALOG DIALOGEX 0, 0, 329, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IPAddrSet"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,234,179,26,14
+    PUSHBUTTON      "取消",IDCANCEL,281,179,26,14
+    CTEXT           "网络IP设置",IDC_STATIC,86,7,123,9,SS_NOTIFY
+    LTEXT           "IP地址",IDC_STATIC,15,38,25,14
+    EDITTEXT        IDC_IPADDRESS1,57,36,24,14,ES_AUTOHSCROLL
+    LTEXT           "子网掩码",IDC_STATIC,14,64,33,14
+    LTEXT           "网关",IDC_STATIC,14,85,17,8
+    EDITTEXT        IDC_IPMASK1,57,60,23,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPGATEWAY1,57,83,23,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "自动获取",IDC_AUTOVALUE,248,57,42,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "设置IP地址",IDC_STATIC,7,23,196,183,BS_CENTER
+    GROUPBOX        "设置自动获取",IDC_STATIC,222,26,100,83,BS_CENTER
+    LTEXT           "DNS-1",IDC_STATIC,13,109,21,8
+    LTEXT           "DNS2(备用)",IDC_STATIC,7,165,41,8
+    EDITTEXT        IDC_IPDNS11,57,106,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPDNS21,61,162,23,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_CHANGEVALUE,57,130,129,14,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_IPADDRESS2,92,35,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPADDRESS3,123,35,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPADDRESS4,160,36,24,14,ES_AUTOHSCROLL
+    LTEXT           ":",IDC_STATIC,80,37,8,8
+    LTEXT           ":",IDC_STATIC,115,38,8,8
+    LTEXT           ":",IDC_STATIC,151,37,8,8
+    EDITTEXT        IDC_IPMASK2,89,60,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPMASK3,124,59,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPMASK4,161,61,24,14,ES_AUTOHSCROLL
+    LTEXT           ":",IDC_STATIC,81,63,8,8
+    LTEXT           ":",IDC_STATIC,116,63,8,14
+    LTEXT           ":",IDC_STATIC,153,62,8,14
+    EDITTEXT        IDC_IPGATEWAY2,89,83,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPGATEWAY3,124,83,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPGATEWAY4,161,84,24,14,ES_AUTOHSCROLL
+    LTEXT           ":",IDC_STATIC,81,85,8,8
+    LTEXT           ":",IDC_STATIC,116,86,8,8
+    LTEXT           ":",IDC_STATIC,153,85,8,8
+    EDITTEXT        IDC_IPDNS12,89,107,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPDNS13,124,107,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPDNS14,161,108,24,14,ES_AUTOHSCROLL
+    LTEXT           ":",IDC_STATIC,81,109,8,8
+    LTEXT           ":",IDC_STATIC,116,110,8,8
+    LTEXT           ":",IDC_STATIC,153,109,8,8
+    EDITTEXT        IDC_IPDNS22,97,162,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPDNS23,132,162,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IPDNS24,169,163,24,14,ES_AUTOHSCROLL
+    LTEXT           ":",IDC_STATIC,89,164,8,8
+    LTEXT           ":",IDC_STATIC,124,165,8,8
+    LTEXT           ":",IDC_STATIC,161,164,8,8
+    PUSHBUTTON      "关于...",IDC_ABOUTME,242,138,50,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "添加备用DNS(可选)",IDC_IPDNS2ADDR,63,183,126,15,0,
+                    WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "IPAddrSet Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "IPAddrSet\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "IPAddrSet.EXE\0"
+            VALUE "ProductName", "IPAddrSet 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_IPADDRSET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 IPAddrSet(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\IPAddrSet.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
